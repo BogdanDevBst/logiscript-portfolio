@@ -1,7 +1,15 @@
+import About from "@/components/sections/about";
+import { Contact } from "@/components/sections/contact";
+import HomeLandingPage from "@/components/sections/homeLandingPage";
+import { Projects } from "@/components/sections/projects";
+
 export default function Home() {
   return (
-      <main className="flex min-h-screen flex-col items-center justify-center p-24">
-       <h2>Portfolio</h2>
-      </main> 
+    <>
+      <HomeLandingPage />
+      <About />
+      <Projects />
+      <Contact />
+    </>
   );
 }
