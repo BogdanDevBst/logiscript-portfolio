@@ -13,41 +13,6 @@ export default function About() {
     "Performance-optimized, maintainable codebases",
   ];
 
-  const projects = [
-    {
-      name: "Climate Calculator",
-      description: "Built for Carbon Savvy",
-      link: "https://calculator.carbonsavvy.uk/",
-    },
-    {
-      name: "VenueNow/Pebble",
-      description: "Reduced client CO₂ emissions by 150+ tons/year",
-      link: "https://www.gopebble.com/",
-    },
-    {
-      name: "MyShine",
-      description: "Modernized legacy React project with Tailwind",
-      link: "https://myshine.co.uk/",
-    },
-    {
-      name: "ZNotes",
-      description: "Contributed to a platform used by 6M+ global learners",
-      link: "https://znotes.org/",
-    },
-    {
-      group: "N-and",
-      name: "Onympo",
-      description: "Created a smart gym vending UI with Electron + Redux",
-      link: "#",
-    },
-    {
-      group: "N-and",
-      name: "IVS-UI",
-      description: "Created an interface from scratch for vending machines",
-      link: "#",
-    },
-  ];
-
   const techStack =
     "React • Typescript • Electron • Node.Js • PostgreSQL • Firebase • Docker • CI/CD • Tailwind CSS • Vite • Linux • Ubuntu";
 
@@ -85,60 +50,8 @@ export default function About() {
           </div>
 
           <div className="mb-6">
-            <h3 className="text-blue-400 text-2xl font-semibold mb-4">
-              🛠️ Key Projects:
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className="bg-gray-900/50 rounded-lg p-4 hover:bg-gray-900 transition-colors duration-300 h-full flex flex-col"
-                >
-                  <div className="flex items-center mb-2">
-                    <span className="text-xl mr-2 text-blue-400">•</span>
-                    <h4 className="text-xl font-medium">
-                      {project.link !== "#" ? (
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
-                        >
-                          {project.name}
-                        </a>
-                      ) : (
-                        <span className="text-blue-400">{project.name}</span>
-                      )}
-                    </h4>
-                  </div>
-                  <div className="ml-6 flex-grow">
-                    <p className="text-gray-300 mb-2">{project.description}</p>
-                    <div className="mt-auto pt-2">
-                      {project.group === "N-and" ? (
-                        <p className="text-gray-500 italic text-sm">
-                          This project is available only on beverages/snack
-                          vending machines
-                        </p>
-                      ) : (
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-400 hover:text-blue-300 text-sm transition-colors duration-200 inline-block"
-                        >
-                          Visit project →
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-6">
             <h3 className="text-2xl font-semibold mb-4">💻 Tech Stack:</h3>
-            <div className="bg-gray-900 rounded-lg p-4">
+            <div className="bg-gray-900 p-4">
               <TextGenerateEffect words={techStack} />
             </div>
           </div>

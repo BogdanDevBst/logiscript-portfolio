@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { GalleryHorizontal, Home, Phone } from "lucide-react";
+import { GalleryHorizontal, Home, Phone, User } from "lucide-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Footer from "@/components/ui/footer";
 
@@ -30,7 +30,7 @@ const navItems = [
   {
     name: "About",
     link: "#about",
-    icon: <Home className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    icon: <User className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
     name: "Projects",
